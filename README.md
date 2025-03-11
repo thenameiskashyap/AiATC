@@ -75,7 +75,7 @@ The **`main()`** function defines test cases:
 
 
 
-# ** 2. Depth-First Search (DFS): Emergency Landing Planning**
+#                            Depth-First Search (DFS): Emergency Landing Planning
 
 ## **Overview**  
 This project simulates an emergency landing scenario where an aircraft must locate the closest viable airport using **Depth-First Search (DFS)**. The system evaluates various factors such as **fuel availability, runway length, airport facilities, and weather conditions** to determine the best possible landing site.  
