@@ -125,4 +125,26 @@ DFS is used to explore nearby airports and determine **if the aircraft can land 
 
 ---
 
+#                                         Flight Path Planning System  
+ 
+This project is a flight path planning system that evaluates potential flight routes while considering factors such as weather conditions, air traffic congestion, airport suitability, and emergency landing options.  
+
+## Features  
+- **Airport Management**: Stores airport details including location, runway length, and emergency capabilities.  
+- **Weather Monitoring**: Tracks weather conditions that affect flight paths, including severe storms, fog, and cyclones.  
+- **Air Traffic Control**: Implements congestion levels in different air traffic zones to estimate delays.  
+- **Flight Path Feasibility**: Checks if a direct flight path is possible based on weather and traffic conditions.  
+- **Alternative Route Planning**: Uses Depth-Limited Search (DLS) to find alternate routes to suitable airports in case of emergencies.  
+- **Distance and Time Estimation**: Calculates the distance between locations using the Haversine formula and estimates travel time considering delays.  
+
+
+
+### Dependencies  
+The project uses the following Python libraries:  
+- `math` (for calculations)  
+- `heapq` (for priority queues)  
+- `collections` (for data structures)  
+
+
+
 
