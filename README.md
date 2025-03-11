@@ -1,4 +1,4 @@
-# Explanation of the BFS Case Study on Airport Network Exploration
+# BFS on Airport Network Exploration
 
 This code simulates an **airport network** and implements the **Breadth-First Search (BFS) algorithm** to find the shortest path between two airports. It also considers real-world challenges like **congestion, weather conditions, and fuel efficiency** when determining optimal flight paths.
 
