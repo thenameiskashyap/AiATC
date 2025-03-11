@@ -125,7 +125,7 @@ DFS is used to explore nearby airports and determine **if the aircraft can land 
 
 ---
 
-#                                         Flight Path Planning System  
+#                                         Flight Path Planning System (Using DLS) 
  
 This project is a flight path planning system that evaluates potential flight routes while considering factors such as weather conditions, air traffic congestion, airport suitability, and emergency landing options.  
 
