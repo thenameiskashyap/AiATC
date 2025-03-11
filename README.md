@@ -70,6 +70,59 @@ The **`main()`** function defines test cases:
 
 ### **For each case:**  
 - The function **finds and prints** the BFS path.  
-- **Visualizes** the flight path, showing **distance, fuel efficiency, congestion, and weather**.  
+- **Visualizes** the flight path, showing **distance, fuel efficiency, congestion, and weather**.
+
+
+
+
+# ** 2. Depth-First Search (DFS): Emergency Landing Planning**
+
+## **Overview**  
+This project simulates an emergency landing scenario where an aircraft must locate the closest viable airport using **Depth-First Search (DFS)**. The system evaluates various factors such as **fuel availability, runway length, airport facilities, and weather conditions** to determine the best possible landing site.  
+
+---
+
+## **Problem Statement**  
+A flight encounters an emergency and requires an immediate landing. The closest **suitable** airport must be identified using DFS, ensuring the aircraft can land safely.  
+
+### **Challenges**  
+- **Avoid revisiting already evaluated airports**  
+- **Handle varying suitability of airports based on available facilities and weather**  
+- **Manage decoy airports that falsely report full capabilities**  
+
+---
+
+## **Approach**  
+### **1. Airport and Aircraft Modeling**  
+- **Airport Class:** Represents an airport with attributes like **location, runway length, control tower, facilities, and weather conditions**.  
+- **Aircraft Class:** Represents an aircraft with properties like **position, fuel remaining, and emergency status**.  
+
+### **2. Emergency Classification**  
+Different emergencies require specific facilities:  
+- **Medical Emergency:** Requires **medical facilities**  
+- **Fire Emergency:** Requires **fire response capabilities**  
+- **Mechanical Failure:** Requires **maintenance support**  
+
+### **3. Distance Calculation (Haversine Formula)**  
+To determine the closest airports, the system calculates distances between **aircraft and airport locations** using the **Haversine formula**, which computes great-circle distances between latitude/longitude points.  
+
+### **4. Depth-First Search (DFS) for Emergency Landing**  
+DFS is used to explore nearby airports and determine **if the aircraft can land safely**:  
+1. **Sort airports by distance** from the aircraft's position.  
+2. **Check feasibility** (fuel, runway length, weather).  
+3. **If an airport is unsuitable, move to the next closest option**.  
+4. **Track visited airports** to prevent revisiting.  
+5. **Verify decoy airports before selection** (50% chance they are unsuitable).  
+
+---
+
+## **Key Features**  
+✔ **Sorting Airports by Distance**  
+✔ **Handling Different Emergency Types**  
+✔ **Verifying Airport Facilities & Conditions**  
+✔ **Avoiding Revisited or Decoy Airports**  
+✔ **Ensuring Feasibility Based on Fuel & Runway Requirements**  
+
+---
 
 
